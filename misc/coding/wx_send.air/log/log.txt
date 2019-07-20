@@ -1,0 +1,3 @@
+{"tag": "function", "depth": 2, "time": "2019-07-21 00:13:21", "data": {"name": "try_log_screen", "call_args": {"screen": null}, "start_time": 1563639199.852593, "ret": "1563639201131.jpg", "end_time": 1563639201.242391}}
+{"tag": "function", "depth": 1, "time": "2019-07-21 00:13:21", "data": {"name": "snapshot", "call_args": {"msg": "UIObjectProxy of \"com.tencent.mm:id/bp>android.widget.LinearLayout>com.tencent.mm:id/d7b\"", "filename": null}, "start_time": 1563639199.85233, "ret": "1563639201131.jpg", "end_time": 1563639201.242595}}
+{"tag": "function", "depth": 1, "time": "2019-07-21 00:13:23", "data": {"name": "sleep", "call_args": {"secs": 1}, "start_time": 1563639202.911173, "ret": null, "end_time": 1563639203.9121861}}

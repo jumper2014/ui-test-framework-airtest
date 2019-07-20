@@ -24,11 +24,3 @@ wait(Template(r"tpl1563638148577.png", record_pos=(0.426, 0.244), resolution=(10
 
 
 touch(Template(r"tpl1563637293027.png", record_pos=(0.411, 0.834), resolution=(1080.0, 2340.0)))
-
-
-
-
-
-
-
-
