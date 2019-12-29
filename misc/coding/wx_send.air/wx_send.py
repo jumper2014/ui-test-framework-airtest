@@ -24,4 +24,8 @@ if search_input:
     text("旺福", enter=True)
    
 
+poco("com.tencent.mm:id/bv").offspring("android.widget.LinearLayout").offspring("com.tencent.mm:id/tb")
+
+
+
 
