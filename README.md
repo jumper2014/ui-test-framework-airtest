@@ -1,6 +1,7 @@
 ### commands
-- adb logcat -c
-- adb shell dumpsys window | grep tencent
+- adb logcat -c  清logcat
+- adb shell dumpsys window | grep tencent  查看微信包名
+- python --capture=no 运行Pytest并且打印日志
 
 ### install
 - pip install pocoui

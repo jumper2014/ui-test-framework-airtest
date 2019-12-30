@@ -33,6 +33,7 @@ def test_start_app():
     # poco.wait_stable()
     # time.sleep(5)
 
+
     wechat_page.btn_add.wait_for_appearance()
 
     snapshot(SNAPSHOTS_PATH+"/wechat.png")
@@ -42,10 +43,8 @@ def test_start_app():
     else:
         print("start wechat failed, quit.")
         return
-    time.sleep(2)
-    launch_finish_time = time.time()
-    print('启动APP所用时间：', launch_finish_time - start_launch_time)
 
-    # stop the app
-    stop_app(wechat_package)
-
+    wechat_page.switch2contact()
+    wechat_page.switch2discover()
+    wechat_page.switch2mine()
+    wechat_page.switch2main()
