@@ -1,3 +1,10 @@
+### 分层的框架
+- libs/pages UI元素层
+- libs/business 业务操作层
+- libs/utils 工具函数
+- suites/send 测试用例层
+
+
 ### commands
 - adb logcat -c  清logcat
 - adb shell dumpsys window | grep tencent  查看微信包名

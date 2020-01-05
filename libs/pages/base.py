@@ -14,16 +14,16 @@ class BasePage(object):
     tab_me = poco(text="我")
 
     # 切换tab操作
-    def switch2main(self):
+    def switch2chats(self):
         self.tab_chats.click()
 
-    def switch2contact(self):
+    def switch2contacts(self):
         self.tab_contacts.click()
 
     def switch2discover(self):
         self.tab_discover.click()
 
-    def switch2mine(self):
+    def switch2me(self):
         self.tab_me.click()
 
 

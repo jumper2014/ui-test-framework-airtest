@@ -2,13 +2,13 @@
 # coding=utf-8
 # author: zengyuetian
 
-import time
 import pytest
 
 from airtest.core.api import *
 from libs.pages.page import *
 from libs.utils.path import *
 from libs.const.app import *
+from libs.business.chats import *
 
 
 def setup_function():
@@ -21,29 +21,14 @@ def teardown_function():
     stop_app(wechat_package)
 
 
-def test_start_app():
-    android_device = connect_device('Android://')
-    devs = device()
-    print(devs)
-    print(devs.list_app(third_only=True))
-
-    # start the app
-    start_launch_time = time.time()
+def test_send_msg():
     start_app(wechat_package, activity=None)
-    # poco.wait_stable()
-    # time.sleep(5)
 
     chats_page.btn_open.wait_for_appearance()
-
-    snapshot(SNAPSHOTS_PATH+"/wechat.png")
-
-    if chats_page.btn_add.exists():
+    if chats_page.btn_open.exists():
         print("start wechat succeed.")
     else:
         print("start wechat failed, quit.")
         return
-
-    chats_page.switch2contacts()
-    chats_page.switch2discover()
-    chats_page.switch2me()
-    chats_page.switch2chats()
+    for i in range(5):
+        send_msg_to("旺福", "你好")

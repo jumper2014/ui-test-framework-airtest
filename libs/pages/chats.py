@@ -38,5 +38,9 @@ class ChatsPage(BasePage):
         self.btn_open.click()
         self.menu_pay.click()
 
+    # 发送消息
+    def click_name(self, name):
+        text_name = poco(text=name)
+        text_name.click()
 
 
