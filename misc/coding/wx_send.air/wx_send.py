@@ -15,3 +15,6 @@ poco("com.tencent.mm:id/bv").offspring("android.widget.LinearLayout").offspring(
 
 
 
+
+touch(Template(r"tpl1578239937375.png", record_pos=(0.399, 0.107), resolution=(1080, 2340)))
+

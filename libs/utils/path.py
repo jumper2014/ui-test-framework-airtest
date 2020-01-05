@@ -33,4 +33,5 @@ def get_root_dir_name():
 
 
 LOGS_PATH = get_root_path() + "/misc/logs"
+TEMPLATE_PATH = get_root_path() + "/template"
 SNAPSHOTS_PATH = get_root_path() + "/misc/snapshots"
