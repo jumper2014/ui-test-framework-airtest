@@ -8,23 +8,23 @@ poco = AndroidUiautomationPoco(force_restart=False)
 
 class BasePage(object):
     # tab页
-    tab_wechat = poco(text="微信")
-    tab_contact = poco(text="通讯录")
+    tab_chats = poco(text="微信")
+    tab_contacts = poco(text="通讯录")
     tab_discover = poco(text="发现")
-    tab_mine = poco(text="我")
+    tab_me = poco(text="我")
 
     # 切换tab操作
     def switch2main(self):
-        self.tab_wechat.click()
+        self.tab_chats.click()
 
     def switch2contact(self):
-        self.tab_contact.click()
+        self.tab_contacts.click()
 
     def switch2discover(self):
         self.tab_discover.click()
 
     def switch2mine(self):
-        self.tab_mine.click()
+        self.tab_me.click()
 
 
 if __name__ == '__main__':

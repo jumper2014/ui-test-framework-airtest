@@ -6,7 +6,7 @@
 from libs.pages.base import *
 
 
-class WechatPage(BasePage):
+class ChatsPage(BasePage):
     # 按钮
     btn_search = poco("com.tencent.mm:id/r_")
     btn_open = poco("com.tencent.mm:id/rb")

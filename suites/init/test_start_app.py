@@ -33,11 +33,11 @@ def test_start_app():
     # poco.wait_stable()
     # time.sleep(5)
 
-    wechat_page.btn_add.wait_for_appearance()
+    chats_page.btn_open.wait_for_appearance()
 
     snapshot(SNAPSHOTS_PATH+"/wechat.png")
 
-    if wechat_page.btn_add.exists():
+    if chats_page.btn_open.exists():
         print("start wechat succeed.")
     else:
         print("start wechat failed, quit.")

@@ -5,7 +5,7 @@
 from libs.pages.base import *
 
 
-class MinePage(BasePage):
+class MePage(BasePage):
     pass
 
 

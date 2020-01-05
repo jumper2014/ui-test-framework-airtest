@@ -5,7 +5,7 @@
 from libs.pages.base import *
 
 
-class ContactPage(BasePage):
+class ContactsPage(BasePage):
     pass
 
 

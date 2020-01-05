@@ -3,17 +3,16 @@
 # author: zengyuetian
 
 
-from libs.pages.wechat import WechatPage
-from libs.pages.contact import ContactPage
+from libs.pages.chats import ChatsPage
+from libs.pages.contacts import ContactsPage
 from libs.pages.discover import DiscoverPage
-from libs.pages.mine import MinePage
+from libs.pages.me import MePage
 
 
-
-wechat_page = WechatPage()
-contact_page = ContactPage()
+chats_page = ChatsPage()
+contacts_page = ContactsPage()
 discover_page = DiscoverPage()
-mine_page = MinePage()
+me_page = MePage()
 
 if __name__ == '__main__':
     pass
